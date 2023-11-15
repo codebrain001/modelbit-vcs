@@ -21,6 +21,7 @@ def predict_iris_species(sepal_length, sepal_width, petal_length, petal_width):
     str: Predicted species of the iris.
     """
     prediction = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
+    print('new lne')
     return iris.target_names[prediction][0]
 
 # to run locally via git & terminal, uncomment the following lines
